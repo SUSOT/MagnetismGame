@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 107552637}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlockZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.95696735, g: 0, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -309,9 +309,9 @@ GameObject:
   - component: {fileID: 616877300}
   - component: {fileID: 616877297}
   - component: {fileID: 616877299}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,6 +483,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f7827ce91520e4f8cece84ae6970c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &971827272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 971827273}
+  - component: {fileID: 971827274}
+  m_Layer: 0
+  m_Name: DropManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &971827273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971827272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &971827274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971827272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93e40eaaa9e2134ebc58f21c659eb75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _item:
+  - {fileID: 6395058267835664253, guid: cd795b122aea29d4487bb219a436e19f, type: 3}
+  - {fileID: 3886894958913391582, guid: bde9febe6a693c147bc64a174a2b04c7, type: 3}
+  - {fileID: 6847726397748172810, guid: 1ff9e9ea945db724c9bedffb4434a832, type: 3}
+  - {fileID: 8320608208990307854, guid: 07da4ee8a8a66ab40b644624e1fb3bb8, type: 3}
+  _yCoordinate: 9
+  SpawnTime: 0.5
 --- !u!1 &1421188468
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1421188469}
   - component: {fileID: 1421188470}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftBlockZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1445370547}
   - component: {fileID: 1445370548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DownBlockZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +699,7 @@ GameObject:
   - component: {fileID: 1514738782}
   - component: {fileID: 1514738783}
   - component: {fileID: 1514738784}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -753,7 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1824669925}
   - component: {fileID: 1824669926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightBlockZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,3 +878,4 @@ SceneRoots:
   - {fileID: 311719382}
   - {fileID: 616877294}
   - {fileID: 107552637}
+  - {fileID: 971827273}
