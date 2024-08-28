@@ -617,11 +617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93e40eaaa9e2134ebc58f21c659eb75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _item:
-  - {fileID: 6395058267835664253, guid: cd795b122aea29d4487bb219a436e19f, type: 3}
-  - {fileID: 3886894958913391582, guid: bde9febe6a693c147bc64a174a2b04c7, type: 3}
-  - {fileID: 6847726397748172810, guid: 1ff9e9ea945db724c9bedffb4434a832, type: 3}
-  - {fileID: 8320608208990307854, guid: 07da4ee8a8a66ab40b644624e1fb3bb8, type: 3}
+  _item: []
   _yCoordinate: 9
   SpawnTime: 0.5
 --- !u!1 &1421188468
