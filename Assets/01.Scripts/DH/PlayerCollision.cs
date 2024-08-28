@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerCollision : MonoBehaviour
@@ -17,29 +18,21 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        string objectTag = collision.gameObject.tag;
-        string currentTag = tmpChanger.GetCurrentTag();
 
-        if (objectTag == currentTag)
-        {
+        if (collision.transform.CompareTag(tmpChanger.GetCurrentTag()))
             score++;
-        }
         else
-        {
             heartCount--;
-        }
 
         UpdateUI();
 
         if (heartCount <= 0)
-        {
-            Debug.Log("Game Over");
-        }
+            SceneManager.LoadScene("DeadScene");
     }
 
     private void UpdateUI()
     {
-        scoreText.text = "Score: " + score.ToString();
-        heartCountText.text = "Hearts: " + heartCount.ToString();
+        scoreText.text = "Score : " + score.ToString();
+        heartCountText.text = "Hearts : " + heartCount.ToString();
     }
 }

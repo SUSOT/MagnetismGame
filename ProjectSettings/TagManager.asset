@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Item
+  - A1
+  - B1
+  - C1
+  - HealItem
   layers:
   - Default
   - TransparentFX
